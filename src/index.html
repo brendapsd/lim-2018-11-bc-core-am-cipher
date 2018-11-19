@@ -7,7 +7,15 @@
   </head>
   <body>
     <div id="root"></div>
-    <h1>Hola mundo!</h1>
+    <h1>CIFRADO CESAR PARA TU CRUSH</h1>
+    <form id="form" class="" action="index.html" method="post">
+      <textarea id="texto" type="text" name="texto" value="" rows="10" cols="40" placeholder="Ingresa el texto"></textarea>
+      <textarea id="textoCifrado" type="text" readonly="readonly" rows="10" cols="40"></textarea><br>
+      <button type="button" name="boton" onclick="getData()">Cifrar</button>
+      <button type="button" name="boton2">Descifrar</button>
+
+    </form>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
