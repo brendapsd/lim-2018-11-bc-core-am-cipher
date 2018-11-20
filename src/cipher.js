@@ -8,15 +8,25 @@
 
   };*/
 // };
- const textoCifrado = document.getElementById('texto-cifrado');
+ const textoACifrar = document.getElementById('textoIngresado');
  const btnCifrar = document.getElementById('botonCifrar');
-
-const moverTexto = () => {
-  const textoACifrar = document.getElementById('textoUsuario').value;
-  return textoACifrar;
-
+ const resultadoCifrado = document.getElementById("texto-cifrado");
+ function cifrarTexto(texto){
+   let palabraCifrada = "";
+   for (let i = 0 ; i < texto.lenght ; i++){
+     palabraCifrada = palabraCifrada.concat(texto[i]);
+    }
+     return palabraCifrada;
 }
 
-btnCifrar.addEventListener('click', () => {
-    textoCifrado.innerHTML = moverTexto();
-});
+ function haciendoClick(){
+   const resultado = cifrarTexto(textoACifrar.value);
+   resultadoCifrado.innerHTML = resultado;
+ }
+
+btnCifrar.addEventListener('click', haciendoClick );
+
+/* const moverTexto = () => {
+  const textoACifrar = document.getElementById('textoUsuario').value;
+  return textoACifrar;
+} */
