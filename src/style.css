@@ -1,8 +1,4 @@
-@font-face {
-  font-family: fuente_1;
-  font-weight: normal;
-  src: url(font/I_Found_My_Valentine.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 html{
   background: url("imagenes/fondoamor.jpg") no-repeat center center;
   min-height: 100% ;
@@ -13,13 +9,18 @@ body {
   font-family: Courier;
 }
 h1 {
-  font-family: fuente_1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
 }
 textarea{
   background: #ffffff;
   color: #FB2F3A;
   border: 2px solid #FB2F3A;
   border-radius: 10px;
+}
+label{
+  color: #ffffff;
 }
 input {
   background: #ffffff;

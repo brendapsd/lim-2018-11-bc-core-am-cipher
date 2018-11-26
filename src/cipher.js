@@ -1,49 +1,43 @@
-// window.cipher = {
-  // ...
-  const btnCifrar = document.getElementById('botonCifrar');
-  const palabraCifrada = document.getElementById('cifrado');
+window.cipher = {
+  encode:function (string,offset){
 
-  function cifrandoTexto() {
-   const offset = parseInt(document.getElementById('offset').value);
-   const textoInicial = document.getElementById('inputIngresado').value;
-    const mayuscula = textoInicial.toUpperCase();
-    let resultadoCifrado = '';
-   for (let i = 0 ; i < mayuscula.length ; i++){
-     if(mayuscula[i] === ' '){
-       resultadoCifrado += ' ';
-       // resultadoCifrado = resultadoCifrado + ' '
+  offset = parseInt(offset);
+  let resultEncode = '';
+  let textoMayuscula = string.toUpperCase();
+
+  for (let i = 0 ; i < textoMayuscula.length ; i++){
+    if(textoMayuscula[i] === ' '){
+       resultEncode += ' ';
+       // resultadoEncode = resultadoEncode + ' '
      } else {
-       const cifrando = String.fromCharCode((mayuscula.charCodeAt(i)-65+offset)%26+65);
-       resultadoCifrado += cifrando;
- // resultadoCifrado = resultadoCifrado + cifrando; igual que arriba, concatenar
- }}
-     return resultadoCifrado;
- }
-  btnCifrar.addEventListener('click', () => {
-  console.log(cifrandoTexto())
-  palabraCifrada.value = cifrandoTexto();
- })
+       const cifrando = String.fromCharCode((textoMayuscula.charCodeAt(i)-65+offset)%26+65);
+       resultEncode += cifrando;
+ // resultadoEncode = resultadoEncode + cifrando; concatenar
+      }
 
- const botonDescifrar = document.getElementById('botonDescifrar');
+   }
+   console.log("enro code");
+   return resultEncode;
+},
 
- function descifrandoTexto() {
-   const offset = parseInt(document.getElementById('offset').value);
-   const textoInicial = document.getElementById('inputIngresado').value;
-   const mayuscula = textoInicial.toUpperCase();
-   let resultadoCifrado = '';
-  for (let i = 0 ; i < mayuscula.length ; i++){
-    if(mayuscula[i] === ' '){
-      resultadoCifrado += ' ';
-      // resultadoCifrado = resultadoCifrado + ' '
-    } else {
-      const cifrando = String.fromCharCode((mayuscula.charCodeAt(i)+65-offset)%26+65);
-      resultadoCifrado += cifrando;
- // resultadoCifrado = resultadoCifrado + cifrando; igual que arriba, concatenar
- }}
-    return resultadoCifrado;
- }
- botonDescifrar.addEventListener('click', () => {
- console.log(descifrandoTexto())
- palabraCifrada.value = descifrandoTexto();
- })
-// };
+  decode:function (string,offset) {
+
+  offset = parseInt(offset);
+  let resultDecode = '';
+  let textoMayuscula = string.toUpperCase();
+
+  for (let i = 0 ; i < textoMayuscula.length ; i++){
+    if(textoMayuscula[i] === ' '){
+       resultDecode += ' ';
+       // resultadoEncode = resultadoEncode + ' '
+     } else {
+       const cifrando = String.fromCharCode((textoMayuscula.charCodeAt(i)-65-(offset%26))%26+65);
+       resultDecode += cifrando;
+  // resultadoEncode = resultadoEncode + cifrando; concatenar
+    }
+     }
+     console.log("entro decode");
+      return resultDecode;
+  }
+
+};
