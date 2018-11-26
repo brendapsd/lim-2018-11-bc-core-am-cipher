@@ -1,0 +1,45 @@
+@font-face {
+  font-family: fuente_1;
+  font-weight: normal;
+  src: url(font/I_Found_My_Valentine.ttf);
+}
+html{
+  background: url("imagenes/fondoamor.jpg") no-repeat center center;
+  min-height: 100% ;
+  background-size: cover;
+}
+body {
+  text-align: center;
+  font-family: Courier;
+}
+h1 {
+  font-family: fuente_1;
+}
+textarea{
+  background: #ffffff;
+  color: #FB2F3A;
+  border: 2px solid #FB2F3A;
+  border-radius: 10px;
+}
+input {
+  background: #ffffff;
+  color: #FB2F3A;
+  border: 1px solid #FB2F3A;
+  border-radius: 5px;
+  height: 20px;
+  width: 200px;
+  text-align: center;
+}
+button {
+  font-size:20px;
+  font-family: verdana;
+  font-weight:bold;
+  color:white;
+  background:#FB2F3A;
+  border-radius: 5px;
+  width: 250px;
+  height:30px;
+}
+div{
+  margin-bottom: 20px;
+}

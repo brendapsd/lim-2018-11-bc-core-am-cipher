@@ -2,30 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Mensaje de amor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="imagenes/iconoamor.ico">
   </head>
   <body>
-    <div id="root"></div>
-    <h1>MENSAJE CIFRADO PARA TU CRUSH</h1>
-    <form id="form" class="" action="index.html" method="post">
-      <div>
-        <textarea id="textoIngresado" type="text" rows="10"
-        cols="40" placeholder="Ingresa el texto"></textarea>
+    <div class="root">
+    <h1>MENSAJE SECRETO PARA TU PAREJA</h1>
+      <div id="textarea1">
+        <textarea id="inputIngresado" type="text" placeholder="Ingresa el texto" rows="10" cols="70"></textarea>
+      </div>
+      <div id="input">
+        <label>Escribe tu clave: </label>
+        <input type="number" id="offset"></input>
+      </div>
+      <div id="botones">
         <button type="button" id="botonCifrar" >Cifrar</button>
         <button type="button" id="botonDescifrar">Descifrar</button>
       </div>
-      <div>
-        <label>Escribe tu clave</label>
-        <input type="number" id="offset">
-      </div>
-     <div>
-        <textarea id="texto-cifrado" type="text"
-        readonly="readonly" rows="10" cols="40"></textarea>
+     <div id="textarea2">
+        <textarea id="cifrado" type="text" rows="10" cols="70" readonly></textarea>
      </div>
-    </form>
-
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+    </div>
   </body>
 </html>
