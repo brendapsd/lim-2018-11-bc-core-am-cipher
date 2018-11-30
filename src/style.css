@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 html{
   background: url("imagenes/fondoamor.jpg") no-repeat center center;
@@ -8,16 +13,26 @@ body {
   text-align: center;
   font-family: Courier;
 }
+.root {
+  background: rgba(16, 21, 51, 0.8);
+  margin-right: 25%;
+  margin-left: 25%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 15%;
+}
 h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   color: #ffffff;
+  background: #FB2F3A;
+  margin-bottom: 20px;
 }
 textarea{
   background: #ffffff;
   color: #FB2F3A;
   border: 2px solid #FB2F3A;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 label{
   color: #ffffff;
@@ -37,7 +52,7 @@ button {
   font-weight:bold;
   color:white;
   background:#FB2F3A;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 250px;
   height:30px;
 }
