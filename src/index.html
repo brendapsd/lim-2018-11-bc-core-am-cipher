@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mensaje de amor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="imagenes/iconoamor.ico">
   </head>
@@ -11,7 +11,7 @@
   <h1>MENSAJE SECRETO PARA TU PAREJA</h1>
     <div class="root">
       <div id="textarea1">
-        <textarea id="textoIngresado" type="text" placeholder="Ingresa el texto" rows="10" cols="70"></textarea>
+        <textarea id="textoIngresado" type="text" placeholder="Ingresa el texto" ></textarea>
       </div>
       <div id="input">
         <label>Escribe tu clave: </label>
@@ -22,13 +22,10 @@
         <button type="button" id="botonDescifrar">Descifrar</button>
       </div>
      <div id="textarea2">
-        <textarea id="cifrado" type="text" rows="10" cols="70" readonly></textarea>
-     </div>
-     <div>
-      <button type="reset" value="reset" id="otrocifrado">Limpiar</button>
+        <textarea id="cifrado" type="text"  readonly></textarea>
      </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    </div>
+  </div>
   </body>
 </html>
