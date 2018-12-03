@@ -3,12 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Mensaje de amor</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="imagenes/iconoamor.ico">
   </head>
   <body>
-  <h1>MENSAJE SECRETO PARA TU PAREJA</h1>
+    <header>
+      <h1>Mensaje secreto para tu pareja</h1>
+    </header>
+    <div class="instrucciones">
+        <p class="Instruction"><strong>INSTRUCCIONES DE USO</strong>
+      <ol>
+          <li>Ingresa tu mensaje: <strong> ej: HOLA COMO ESTAS</strong></li>
+          <li>Ingresa el nro de espacios : <strong>33</strong> </li>
+          <li>Aplasta el boton ya sea cifrar o descifrar : <strong>cifrar</strong></li>
+          <li>Listo te mostrara la rpta : <strong>ej: OVSH JVTV LZAHZ </strong> </li>
+      </ol>
+    </div>
     <div class="root">
       <div id="textarea1">
         <textarea id="textoIngresado" type="text" placeholder="Ingresa el texto" ></textarea>
@@ -22,7 +33,11 @@
         <button type="button" id="botonDescifrar">Descifrar</button>
       </div>
      <div id="textarea2">
-        <textarea id="cifrado" type="text"  readonly></textarea>
+        <textarea id="cifrado" type="text" readonly></textarea>
+     </div>
+     <div id="botones2">
+        <button type="button" id="btn-copy">Copiar</button>
+        <button type="reset" value="Reset">Limpiar</button>
      </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

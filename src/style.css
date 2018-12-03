@@ -1,42 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 *{
-  margin: 0; 
+  margin: 0;
   padding: 0;
   box-sizing: 0;
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-html{
+body{
   background: url("imagenes/fondoamor.jpg") no-repeat center center;
   min-height: 100% ;
   background-size: cover;
+  background-attachment: fixed ;
 }
-body {
-  text-align: center;
-  font-family: Courier;
-}
-.root {
-  background: rgba(16, 21, 51, 0.8);
+.instrucciones{
+  background: rgba(124, 73, 138, 0.8);
   width: 50%;
   height: 100%;
   padding-top: 2%;
   padding-bottom: 1%;
-  border-radius: 15%;
+  border-radius: 10px;
   box-sizing: border-box;
+  color: #ffffff;
+  margin : Auto ;
+  margin-bottom: 20px;
+  font-family: Courier;
+}
+p{
+  text-align: center;
+  margin-bottom: 10px;
+}
+ol{
+  margin-left: 15%;
+}
+.root {
+  background: rgba(124, 73, 138, 0.8);
+  width: 50%;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin : Auto;
+  text-align: center;
 }
 h1 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Lobster', cursive;
   font-weight: bold;
   color: #ffffff;
-  background: #FB2F3A;
+  background: #FD6D86;
   margin-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
 }
 textarea{
   background: #ffffff;
   height: 200px;
   width: 90%;
-  color: #FB2F3A;
-  border: 2px solid #FB2F3A;
-  border-radius: 20px;
+  border: 2px solid #87D7D4;
+  border-radius: 5px;
   box-sizing: border-box;
+  font-family: Courier;
 }
 label{
   color: #ffffff;
@@ -44,56 +65,100 @@ label{
 input {
   background: #ffffff;
   color: #FB2F3A;
-  border: 1px solid #FB2F3A;
+  border: 1px solid #87D7D4;
   border-radius: 5px;
-  height: 20px;
-  width: 200px;
+  height: 25px;
+  width: 80px;
   text-align: center;
   box-sizing: border-box;
+  font-family: Courier;
 }
 button {
   font-size:20px;
   font-family: verdana;
   font-weight:bold;
-  color:white;
-  background:#FB2F3A;
+  color: white;
+  background: #FD6D86;
   border-radius: 10px;
   width: 250px;
   height:30px;
+  font-family: Courier;
 }
-div{
+div {
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 780px) and (max-width: 2000px) {
-  .root {
-    background: rgba(16, 21, 51, 0.8);
+  .instrucciones{
+    background: rgba(124, 73, 138, 0.8);
     width: 50%;
     height: 100%;
     padding-top: 2%;
     padding-bottom: 1%;
-    border-radius: 15%;
+    border-radius: 10px;
     box-sizing: border-box;
     margin-left: 25%;
+  }
+  .root {
+    background: rgba(124, 73, 138, 0.8);
+    width: 50%;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 25%;
+  }
+  #botonCifrar {
+    margin-bottom: 10px;
   }
 
 }
 @media screen and (min-width: 480px) and (max-width: 780px) {
-  .root {
-    background: rgba(16, 21, 51, 0.8);
+  .instrucciones{
+    background: rgba(124, 73, 138, 0.8);
     width: 75%;
     height: 100%;
     padding-top: 2%;
     padding-bottom: 1%;
-    border-radius: 15%;
+    border-radius: 10px;
     box-sizing: border-box;
     margin-left: 12.5%;
   }
+  .root {
+    background: rgba(124, 73, 138, 0.8);
+    width: 75%;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 12.5%;
+  }
+  #botonCifrar {
+    margin-bottom: 10px;
+  }
 
 }
-@media screen and (max-width: 480px) {
-  .root {
-    background: rgba(16, 21, 51, 0.8);
+@media screen and (min-width: 360px) and (max-width: 480px){
+  .instrucciones{
+    background: rgba(124, 73, 138, 0.8);
     width: 100%;
     height: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
   }
+  .root {
+    background: rgba(124, 73, 138, 0.8);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  #botonCifrar {
+    margin-bottom: 10px;
+  }
+
 }

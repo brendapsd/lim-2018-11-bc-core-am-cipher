@@ -1,5 +1,5 @@
 window.cipher = {
-  encode: (string,offset) => {
+  encode: (offset,string) => {
     let resultEncode = "";
     let encode = "";
   for (let i = 0 ; i < string.length ; i++){
@@ -15,12 +15,12 @@ window.cipher = {
    return resultEncode;
   },
 
-  decode: (string2,offset2) => {
+  decode: (offset,string) => {
     let resultDecode = "";
     let decode = "";
-  for (let j = 0 ; j < string2.length ; j++){
-    let ascii = string2.toUpperCase().charCodeAt(j);
-    let newOffset = offset2%26;
+  for (let j = 0 ; j < string.length ; j++){
+    let ascii = string.toUpperCase().charCodeAt(j);
+    let newOffset = offset%26;
     if(ascii === 32){
        decode = " "; // resultadoEncode = resultadoEncode + ' '
         } else {
