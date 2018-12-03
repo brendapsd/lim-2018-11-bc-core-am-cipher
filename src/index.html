@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Mensaje de amor</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="imagenes/iconoamor.ico">
   </head>
@@ -15,32 +15,32 @@
         <p><strong>INSTRUCCIONES DE USO</strong></p>
       <ol>
           <li>Ingresa tu mensaje: <strong> ej: HOLA COMO ESTAS</strong></li>
-          <li>Ingresa el numero de espacios : <strong>33</strong> </li>
+          <li>Ingresa el número de espacios : <strong>33</strong> </li>
           <li>Has clic el boton cifrar o descifrar : <strong>cifrar</strong></li>
           <li>Listo te mostrara la rpta : <strong>ej: OVSH JVTV LZAHZ </strong> </li>
       </ol>
     </div>
-    <form class="root">
+    <form class="formulario" id="form">
       <div id="textarea1">
-        <textarea id="textoIngresado" type="text" placeholder="Ingresa el texto" ></textarea>
+        <textarea id="texto-ingresado" placeholder="Ingresa el texto" ></textarea>
       </div>
       <div id="input">
         <label>Escribe tu clave: </label>
-        <input type="number" id="NumOffset">
+        <input type="number" id="num-offset">
       </div>
       <div id="botones">
-        <button type="button" id="botonCifrar" >Cifrar</button>
-        <button type="button" id="botonDescifrar">Descifrar</button>
+        <button type="button" id="boton-cifrar" >Cifrar</button>
+        <button type="button" id="boton-descifrar">Descifrar</button>
       </div>
      <div id="textarea2">
-        <textarea id="cifrado" type="text" readonly></textarea>
+        <textarea id="texto-cifrado" readonly></textarea>
      </div>
      <div id="botones2">
         <button type="button" id="btn-copy">Copiar</button>
-        <button type="reset" value="Reset">Limpiar</button>
+        <button type="reset" value="Reset" id="btn-limpiar">Limpiar</button>
      </div>
+    </form>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-    </form>
   </body>
 </html>
