@@ -18,9 +18,8 @@ const btnCopy = document.getElementById('btn-copy');
   });
 
   btnCopy.addEventListener('click', () => {
-     let aux = document.getElementById('texto-cifrado');
-     aux.select();
+     let copiarTexto = document.getElementById('texto-cifrado');
+     copiarTexto.select();
      // Copia el texto seleccionado
-     document.execCommand("copy");
+     document.execCommand('copy');
   });
-

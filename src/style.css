@@ -17,7 +17,7 @@ body{
   padding-top: 2%;
   padding-bottom: 1%;
   border-radius: 10px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   color: #ffffff;
   margin : Auto ;
   margin-bottom: 20px;
@@ -37,7 +37,7 @@ ol{
   padding-top: 2%;
   padding-bottom: 1%;
   border-radius: 10px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin : Auto;
   text-align: center;
 }
@@ -57,7 +57,6 @@ textarea{
   width: 90%;
   border: 2px solid #87D7D4;
   border-radius: 5px;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 label{
@@ -71,7 +70,6 @@ input {
   height: 25px;
   width: 80px;
   text-align: center;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 button {
@@ -85,7 +83,7 @@ button {
   height:30px;
   font-family: 'Text Me One', sans-serif;
 }
-div {
+div  {
   margin-bottom: 20px;
 }
 
@@ -96,7 +94,7 @@ div {
     padding-top: 2%;
     padding-bottom: 1%;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-left: 25%;
   }
   .formulario {
@@ -105,7 +103,7 @@ div {
     padding-top: 2%;
     padding-bottom: 1%;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-left: 25%;
   }
 }
@@ -116,7 +114,7 @@ div {
     padding-top: 2%;
     padding-bottom: 1%;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-left: 12.5%;
   }
   .formulario {
@@ -125,7 +123,7 @@ div {
     padding-top: 2%;
     padding-bottom: 1%;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-left: 12.5%;
   }
   #boton-cifrar {
@@ -142,13 +140,13 @@ div {
     padding-top: 2%;
     padding-bottom: 1%;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     text-align: left;
   }
   .formulario {
     background: rgba(124, 73, 138, 0.8);
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
   #boton-cifrar {
     margin-bottom: 10px;
