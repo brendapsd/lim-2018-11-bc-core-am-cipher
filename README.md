@@ -1,4 +1,4 @@
-# Cifrado César
+# Mensaje secreto para tu pareja 
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
@@ -82,4 +82,3 @@ La interfaz debe permitir al usuario:
   el producto.
 * [ ] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-

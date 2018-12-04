@@ -14,10 +14,11 @@
     <div class="instrucciones">
         <p><strong>INSTRUCCIONES DE USO</strong></p>
       <ol>
-          <li>Ingresa tu mensaje: <strong> ej: HOLA COMO ESTAS</strong></li>
-          <li>Ingresa el número de espacios : <strong>33</strong> </li>
-          <li>Has clic el boton cifrar o descifrar : <strong>cifrar</strong></li>
-          <li>Listo te mostrara la rpta : <strong>ej: OVSH JVTV LZAHZ </strong> </li>
+          <li>Ingresa el mensaje que deseas enviar a tu pareja: <strong>ejem: HOLA AMOR</strong></li>
+          <li>Ingresa la clave numérica: <strong> ejem: 33</strong> </li>
+          <li>Haz clic el botón cifrar o descifrar: <strong> ejem: cifrar</strong></li>
+          <li>Listo te mostrara la rpta: <strong>ejem: OVSH HTVY </strong></li>
+          <li>Si deseas lo puedes enviar por medio de Whatsapp</li>
       </ol>
     </div>
     <form class="formulario" id="form">
@@ -25,7 +26,7 @@
         <textarea id="texto-ingresado" placeholder="Ingresa el texto" ></textarea>
       </div>
       <div id="input">
-        <label>Escribe tu clave: </label>
+        <label>Escribe tu clave numérica: </label>
         <input type="number" id="num-offset">
       </div>
       <div id="botones">
@@ -39,6 +40,7 @@
         <button type="button" id="btn-copy">Copiar</button>
         <button type="reset" value="Reset" id="btn-limpiar">Limpiar</button>
      </div>
+        <a href="https://web.whatsapp.com/" target="_blank"/><button type="button" id="btn-enviar">Enviar al Whatsapp</button></a>
     </form>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
