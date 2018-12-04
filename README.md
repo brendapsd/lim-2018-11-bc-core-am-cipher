@@ -21,10 +21,10 @@ Deseas enviar un mensaje a tu pareja pero sabes que siempre hay familiares o ami
 - Esta aplicación no necesita instalación, solo debemos de ingresar al siguiente enlace y podremos usarlo: [Mensaje secreto para tu pareja](https://brendapsd.github.io/lim-2018-11-bc-core-am-cipher/src/)
 
   Vista en el navegador
-  ![vista-navegador1](lim-2018-11-bc-core-am-cipher/imagen/vistanavegador1.jpg) ![vista-navegador2](lim-2018-11-bc-core-am-cipher/imagen/vistanavegador2.jpg)
+  ![vista-navegador1](src/imagenes/vistanavegador1.png) ![vista-navegador2](src/imagenes/vistanavegador2.png)
 
   Vista en el smartphone
-  ![vista-movil1](lim-2018-11-bc-core-am-cipher/imagen/vistamovil1.jpg) ![vista-movil2](lim-2018-11-bc-core-am-cipher/imagen/vistamovil2.jpg)
+  ![vista-movil1](src/imagenes/vistamovil1.png) ![vista-movil2](src/imagenes/vistamovil2.png)
 
 #### Interfaz de usuario (UI)
 
